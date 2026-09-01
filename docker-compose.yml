@@ -12,6 +12,9 @@ services:
     container_name: mern-backend
     ports:
       - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/mern_db
+      - JWT_SECRET=my_secure_jwt_secret_key_123
     depends_on:
       - mongodb
 
