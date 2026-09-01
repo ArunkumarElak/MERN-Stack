@@ -60,6 +60,7 @@
     "check-types": "./node_modules/.bin/tsc --noemit",
     "eslint": "./node_modules/.bin/eslint src/**.ts",
     "lint": "npm run eslint && npm run check-types",
-    "lint:fix": "eslint . --ext .ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "start": "vite --host 0.0.0.0 --port 3000"
   }
 }
